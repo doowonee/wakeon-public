@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <title>서비스 점검 안내</title>
+</head>
+
+<body style="background-color: #f8f6f6; color: #333;">
+    <div style="margin-top: 48px;">
+        <img src=" ./favicon.png" alt="웨이크온 로고" style="display: block; margin: 0 auto; max-width: 200px;">
+        <h3 style="text-align: center;">웨이크온</h3>
+    </div>
+    <div
+        style="background-color: #ecebeb; max-width: 400px; margin: 40px auto; width: 100%; box-shadow: 8px 4px 4px gray; padding: 48px; border-radius: 8px;">
+        <h1 style="text-align: center;">현재 점검중입니다</h1>
+        <p style="text-align: center;">점검 일정 <strong>13시 - 14시</strong></p>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            fetch('https://wa.doowonee.com/u/log?ec=maintaience&em=maintaience', {
+                credentials: 'include'
+            })
+                .then(response => { })
+                .then(data => { })
+                .catch(error => { });
+        });
+    </script>
+</body>
+
+</html>
